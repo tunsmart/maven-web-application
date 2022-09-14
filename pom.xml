@@ -6,9 +6,9 @@
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.1-SNAPSHOT</version> 
+	<version>0.0.5-SNAPSHOT</version> 
 	
-	<name>maven-web-application</name>
+	<name>my-maven-web-application</name>
 
 	<description>Maven Web Project for Java Project</description>
 
@@ -95,20 +95,27 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://100.26.133.141:8081/repository/paypal-releases/</url>
+	      <name>Tesla Releases Nexus Repository</name>
+	      <url>http://13.58.31.198:8081/landmark/repository/tesla-releases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.118.29.219:8081/repository/paypal-snapshots/</url>
+	      <url>http://13.58.31.198:8081/landmark/repository/tesla-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
+	<repositories>
+	    <repository>
+	      <id>nexus</id>
+	      <name>Maven Central Nexus Mirrors</name>
+	      <url>http://13.58.31.198:8081/landmark/repository/tesla-group//</url>
+	    </repository>
+	</repositories>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>my-maven-web-app</finalName>
 		
 		<plugins>
 			<plugin>
